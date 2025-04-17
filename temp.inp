@@ -1,6 +1,6 @@
 ; Filename: Network Files/Net3.inp
 ; WNTR: 1.3.2
-; Created: 2025-04-17 21:17:10
+; Created: 2025-04-18 00:50:00
 [TITLE]
 EPANET Example Network 3
 Example showing how the percent of Lake water in a dual-source
@@ -298,6 +298,56 @@ Pump 335 Open IF Tank 1 below 17.1
 Pump 335 Closed IF Tank 1 above 19.1
 Pipe 330 Closed IF Tank 1 below 17.1
 Pipe 330 Open IF Tank 1 above 19.1
+Pump 10 Closed AT TIME 0
+Pump 10 Open AT TIME 1
+Pump 10 Open AT TIME 2
+Pump 10 Closed AT TIME 3
+Pump 10 Open AT TIME 4
+Pump 10 Open AT TIME 5
+Pump 10 Open AT TIME 6
+Pump 10 Open AT TIME 7
+Pump 10 Closed AT TIME 8
+Pump 10 Closed AT TIME 9
+Pump 10 Open AT TIME 10
+Pump 10 Closed AT TIME 11
+Pump 10 Closed AT TIME 12
+Pump 10 Closed AT TIME 13
+Pump 10 Closed AT TIME 14
+Pump 10 Open AT TIME 15
+Pump 10 Open AT TIME 16
+Pump 10 Closed AT TIME 17
+Pump 10 Closed AT TIME 18
+Pump 10 Open AT TIME 19
+Pump 10 Open AT TIME 20
+Pump 10 Open AT TIME 21
+Pump 10 Closed AT TIME 22
+Pump 10 Open AT TIME 23
+Pump 10 Closed AT TIME 1
+Pump 335 Open AT TIME 0
+Pump 335 Closed AT TIME 1
+Pump 335 Closed AT TIME 2
+Pump 335 Open AT TIME 3
+Pump 335 Open AT TIME 4
+Pump 335 Closed AT TIME 5
+Pump 335 Closed AT TIME 6
+Pump 335 Open AT TIME 7
+Pump 335 Open AT TIME 8
+Pump 335 Closed AT TIME 9
+Pump 335 Open AT TIME 10
+Pump 335 Closed AT TIME 11
+Pump 335 Closed AT TIME 12
+Pump 335 Open AT TIME 13
+Pump 335 Open AT TIME 14
+Pump 335 Closed AT TIME 15
+Pump 335 Open AT TIME 16
+Pump 335 Closed AT TIME 17
+Pump 335 Closed AT TIME 18
+Pump 335 Open AT TIME 19
+Pump 335 Open AT TIME 20
+Pump 335 Open AT TIME 21
+Pump 335 Closed AT TIME 22
+Pump 335 Open AT TIME 23
+Pump 335 Open AT TIME 1
 
 [RULES]
 
@@ -357,6 +407,10 @@ MAXCHECK             10
 UNBALANCED           CONTINUE 10
 PATTERN              1                   
 DEMAND MULTIPLIER    1
+DEMAND MODEL         PDA
+MINIMUM PRESSURE     0.00
+REQUIRED PRESSURE    213.24
+PRESSURE EXPONENT    0.5
 EMITTER EXPONENT     0.5
 QUALITY              TRACE Lake
 DIFFUSIVITY          1
