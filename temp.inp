@@ -1,6 +1,6 @@
 ; Filename: Network Files/Net3.inp
 ; WNTR: 1.3.2
-; Created: 2025-04-17 17:14:51
+; Created: 2025-04-17 21:17:10
 [TITLE]
 EPANET Example Network 3
 Example showing how the percent of Lake water in a dual-source
@@ -357,10 +357,6 @@ MAXCHECK             10
 UNBALANCED           CONTINUE 10
 PATTERN              1                   
 DEMAND MULTIPLIER    1
-DEMAND MODEL         PDA
-MINIMUM PRESSURE     0.00
-REQUIRED PRESSURE    71.08
-PRESSURE EXPONENT    0.5
 EMITTER EXPONENT     0.5
 QUALITY              TRACE Lake
 DIFFUSIVITY          1
