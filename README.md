@@ -1,4 +1,4 @@
-Follow these Steps to install the optimizer.
+Follow these Steps to install the optimizer :
 
 1. Download the files or clone repository if using GitHub.
    
